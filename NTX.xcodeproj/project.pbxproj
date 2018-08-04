@@ -38,7 +38,6 @@
 		F42AD8891AC05DF300F18E96 /* DVTViewNavigators_10_10.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F42AD8861AC05DF300F18E96 /* DVTViewNavigators_10_10.pdf */; };
 		F42AD88A1AC05DF300F18E96 /* DVTViewUtilities_10_10.pdf in Resources */ = {isa = PBXBuildFile; fileRef = F42AD8871AC05DF300F18E96 /* DVTViewUtilities_10_10.pdf */; };
 		F42AD8971AC0660D00F18E96 /* GeneralPrefsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F42AD8931AC0660D00F18E96 /* GeneralPrefsViewController.m */; };
-		F42C9A3D1E65B523007F9095 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = F42C9A3C1E65B523007F9095 /* dsa_pub.pem */; };
 		F45C934D0B85AEB300D4FE3B /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42206B609BDC68A00E48AEB /* IOKit.framework */; };
 		F46105B90A82222A006CEC0A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F46105B80A82222A006CEC0A /* AppKit.framework */; };
 		F477F5AA1E5EFBD700208D48 /* pkg.icns in Resources */ = {isa = PBXBuildFile; fileRef = F477F5A91E5EFBD700208D48 /* pkg.icns */; };
@@ -177,7 +176,6 @@
 		F42AD8871AC05DF300F18E96 /* DVTViewUtilities_10_10.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = DVTViewUtilities_10_10.pdf; path = NTX/Images/DVTViewUtilities_10_10.pdf; sourceTree = "<group>"; };
 		F42AD8921AC0660D00F18E96 /* GeneralPrefsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeneralPrefsViewController.h; path = NTX/Preferences/GeneralPrefsViewController.h; sourceTree = "<group>"; };
 		F42AD8931AC0660D00F18E96 /* GeneralPrefsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GeneralPrefsViewController.m; path = NTX/Preferences/GeneralPrefsViewController.m; sourceTree = "<group>"; };
-		F42C9A3C1E65B523007F9095 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_pub.pem; path = /Users/simon/Projects/Sparkle/Certificates/dsa_pub.pem; sourceTree = "<absolute>"; };
 		F46105B80A82222A006CEC0A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		F477F5A91E5EFBD700208D48 /* pkg.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = pkg.icns; path = NTX/Images/pkg.icns; sourceTree = "<group>"; };
 		F477F5AB1E5F66A500208D48 /* UpdatePrefsViewController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UpdatePrefsViewController.png; path = NTX/Images/UpdatePrefsViewController.png; sourceTree = "<group>"; };
@@ -327,6 +325,7 @@
 				66FC8158030106B8000ACE77 /* NTK Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				F17FE64921160EAA00B8AB9C /* Recovered References */,
 			);
 			name = NTX;
 			sourceTree = "<group>";
@@ -374,6 +373,13 @@
 			);
 			name = "NTK Resources";
 			path = NTX/Context;
+			sourceTree = "<group>";
+		};
+		F17FE64921160EAA00B8AB9C /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		F401F4EC1AFD34F5009E76C2 /* Icons */ = {
@@ -569,7 +575,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4A58FEF18BE09AB008B0832 /* toolkit.iconset in Resources */,
-				F42C9A3D1E65B523007F9095 /* dsa_pub.pem in Resources */,
 				F40100021BA702C400555CBC /* Connected.pdf in Resources */,
 				F4BD7D85189BC8BE00D9F71F /* projectfiletype.plist in Resources */,
 				F40100051BA702C400555CBC /* PrintLength.pdf in Resources */,
@@ -763,7 +768,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "~/Projects/Sparkle/Sparkle-1.16.0";
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Projects/Sparkle/Sparkle-1.16.0",
+					"$(PROJECT_DIR)",
+				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				INFOPLIST_FILE = "NTX/NTX-Info.plist";
@@ -778,7 +786,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
-				FRAMEWORK_SEARCH_PATHS = "~/Projects/Sparkle/Sparkle-1.16.0";
+				FRAMEWORK_SEARCH_PATHS = (
+					"~/Projects/Sparkle/Sparkle-1.16.0",
+					"$(PROJECT_DIR)",
+				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				INFOPLIST_FILE = "NTX/NTX-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
